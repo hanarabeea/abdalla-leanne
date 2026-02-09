@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   description: "Celebrating our wedding - Abdalla & Leanne",
   applicationName: "hamoody",
   generator: "v0.app",
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://abdalla-leanne.digitivaa.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://abdalla_leanne.netlify.app/'),
   openGraph: {
     title: "Welcome to Our Wedding",
     description: "Celebrating our wedding - Abdalla & Leanne",
