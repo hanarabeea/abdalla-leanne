@@ -18,7 +18,7 @@ export default function HandwrittenMessage() {
   const [currentWidth, setCurrentWidth] = useState(3);
   const [messageType, setMessageType] = useState('handwritten'); // 'handwritten' or 'normal'
   const [normalMessage, setNormalMessage] = useState('');
-  const toEmail = 'khaledyehia37@gmail.com';
+  const toEmail = 'Lamasatlea@gmail.com';
 
   // Pen color options
   const penColors = [
