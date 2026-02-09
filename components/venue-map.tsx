@@ -92,9 +92,6 @@ export default function VenueMap() {
           {/* Venue Information */}
           <div className="mt-6 text-center px-4">
             <h3 className="text-xl sm:text-2xl font-serif font-medium text-gray-800 mb-2">{t('venueName')}</h3>
-            <p className="text-gray-700 text-base sm:text-lg mb-3">
-              {t('venueLocation')}
-            </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4 text-xs sm:text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
