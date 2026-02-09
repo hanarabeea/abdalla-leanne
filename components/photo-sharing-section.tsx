@@ -38,7 +38,7 @@ export default function PhotoSharingSection() {
           <div>
             <div className="text-center">
               <a
-                href="https://drive.google.com/drive/folders/1xQhlxrelAiYYtHofbIYZZsNqacvdLSYp"
+                href="https://drive.google.com/drive/folders/1rutiGfQBHv9Eq9Dw9YHVMbCftWJ4vQIu"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-400 to-purple-400 text-white rounded-lg hover:from-blue-500 hover:to-purple-500 transition-all shadow-lg text-lg font-medium"
