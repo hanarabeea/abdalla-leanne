@@ -8,7 +8,6 @@ export default function RSVPSection() {
   const { t } = useLanguage();
   const [rsvpAttending, setRsvpAttending] = useState('');
   const [rsvpName, setRsvpName] = useState('');
-  const [rsvpPlusOne, setRsvpPlusOne] = useState('');
   const [rsvpGuestCount, setRsvpGuestCount] = useState(1);
   const [isSending, setIsSending] = useState(false);
   const [message, setMessage] = useState({ text: '', type: '' });
@@ -38,7 +37,6 @@ export default function RSVPSection() {
       formData.append('rsvp_attending', rsvpAttending);
       formData.append('rsvp_name', rsvpName.trim());
       if (rsvpAttending === 'yes') {
-        formData.append('rsvp_plus_one', rsvpPlusOne.trim());
         formData.append('rsvp_guest_count', rsvpGuestCount.toString());
       }
 
@@ -65,7 +63,6 @@ export default function RSVPSection() {
       // Reset form
       setRsvpAttending('');
       setRsvpName('');
-      setRsvpPlusOne('');
       setRsvpGuestCount(1);
       
     } catch (error) {
@@ -145,13 +142,6 @@ export default function RSVPSection() {
                       placeholder={t('yourNamePlaceholder')}
                       className="w-full px-4 py-3 border-2 border-gray-700/50 bg-white/40 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-300/50 focus:border-transparent"
                       required
-                    />
-                    <input
-                      type="text"
-                      value={rsvpPlusOne}
-                      onChange={(e) => setRsvpPlusOne(e.target.value)}
-                      placeholder={t('plusOnePlaceholder')}
-                      className="w-full px-4 py-3 border-2 border-gray-700/40 bg-white/35 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-300/50 focus:border-transparent"
                     />
                     <div className="flex items-center gap-2">
                       <label className="text-gray-700 font-medium">{t('totalGuests')}</label>

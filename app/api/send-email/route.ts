@@ -47,7 +47,7 @@ export async function POST(request: Request) {
     // Build email content
     let emailContent = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
-        <h2 style="color: #4f46e5; text-align: center;">New Message from Your Engagement Website</h2>
+        <h2 style="color: #4f46e5; text-align: center;">New Message from Your Wedding Website</h2>
         <div style="background: #f8fafc; padding: 20px; border-radius: 10px; margin: 20px 0;">
           <p><strong>From:</strong> ${name}</p>
           <p><strong>Message Type:</strong> ${messageType === 'handwritten' ? 'Handwritten' : 'Normal Message'}</p>
@@ -92,16 +92,16 @@ export async function POST(request: Request) {
     emailContent += `
         </div>
         <p style="text-align: center; color: #6b7280; font-size: 14px;">
-          Sent from your beautiful engagement website!
+          Sent from your beautiful wedding website!
         </p>
       </div>
     `;
 
     // Send mail
     const info = await transporter.sendMail({
-      from: '"Engagement Website" <digitivaa@gmail.com>',
+      from: '"Wedding Website" <digitivaa@gmail.com>',
       to: toEmail,
-      subject: `New Message from ${name} - Engagement Website`,
+      subject: `New Message from ${name} - Wedding Website`,
       html: emailContent,
       attachments
     });
