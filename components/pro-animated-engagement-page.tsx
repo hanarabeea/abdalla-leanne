@@ -138,7 +138,7 @@ export default function ProAnimatedEngagementPage({ onImageLoad }: ProAnimatedEn
             </motion.div>
 
             <motion.div variants={scaleIn}>
-              <CountdownTimer targetDate={new Date("2026-03-22T16:00:00+04:00")} />
+              <CountdownTimer targetDate={new Date("2026-03-22T16:30:00+04:00")} />
             </motion.div>
           </div>
         </div>

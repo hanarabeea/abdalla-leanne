@@ -56,7 +56,7 @@ export default function EngagementPage() {
             </div>
           </div>
 
-          <CountdownTimer targetDate={new Date("2026-03-22T16:00:00+04:00")} />
+          <CountdownTimer targetDate={new Date("2026-03-22T16:30:00+04:00")} />
         </div>
       </section>
 
@@ -107,12 +107,12 @@ export default function EngagementPage() {
                         d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-                    <span className="text-lg text-foreground">4:00 PM</span>
+                    <span className="text-lg text-foreground">4:30 PM</span>
                   </div>
                 </div>
 
                 <p className="mt-4 text-sm md:text-base text-muted-foreground text-center" dir="rtl" lang="ar">
-                  ملاحظة: زفة العرسان في تمام الساعة 4:30 عصراً، نرجو الحضور مبكراً لتفادي الازدحام المتوقع من حركة المرور
+                  ملاحظة: زفة العرسان في تمام الساعة 5:00 عصراً، نرجو الحضور مبكراً لتفادي الازدحام المتوقع من حركة المرور
                 </p>
               </div>
             </div>
