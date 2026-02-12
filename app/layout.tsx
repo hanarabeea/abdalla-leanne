@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "digitiva",
     images: [
       {
-        url: "/invitation-design.png",
+        url: "/invitation-design.png?v=2",
         width: 1200,
         height: 630,
         alt: "Wedding Invitation - Abdalla & Leanne",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Welcome to Our Wedding",
     description: "Celebrating our wedding - Abdalla & Leanne",
-    images: ["/invitation-design.png"],
+    images: ["/invitation-design.png?v=2"],
   },
   alternates: {
     canonical: "/",
@@ -60,7 +60,7 @@ export default function RootLayout({
         {/* Preload critical images for immediate loading */}
         <link 
           rel="preload" 
-          href="/invitation-design.png" 
+          href="/invitation-design.png?v=2" 
           as="image" 
           type="image/png"
         />
