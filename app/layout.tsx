@@ -18,17 +18,17 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: {
     default: "Welcome to Our Wedding",
-    template: "%s | hamoody",
+    template: "%s | digitiva",
   },
   description: "Celebrating our wedding - Abdalla & Leanne",
-  applicationName: "hamoody",
+  applicationName: "digitiva",
   generator: "v0.app",
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://abdalla-leanne.netlify.app/'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://abdalla-leanne.digitivaa.com/'),
   openGraph: {
     title: "Welcome to Our Wedding",
     description: "Celebrating our wedding - Abdalla & Leanne",
     type: "website",
-    siteName: "hamoody",
+    siteName: "digitiva",
     images: [
       {
         url: "/invitation-design.png",
