@@ -112,7 +112,7 @@ export default function EngagementPage() {
                 </div>
 
                 <p className="mt-4 text-sm md:text-base text-muted-foreground text-center" dir="rtl" lang="ar">
-                  ملاحظة: زفة العرسان في تمام الساعة 5:00 عصراً، نرجو الحضور مبكراً لتفادي الازدحام المتوقع من حركة المرور
+                  ملاحظة: زفة العرسان في تمام الساعة 4:45 عصراً، نرجو الحضور مبكراً لتفادي الازدحام المتوقع من حركة المرور
                 </p>
               </div>
             </div>
