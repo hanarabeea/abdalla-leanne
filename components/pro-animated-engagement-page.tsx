@@ -16,7 +16,7 @@ const fadeIn: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { 
+    transition: {
       duration: 0,
       ease: [0.22, 1, 0.36, 1] as const
     }
@@ -56,7 +56,7 @@ export default function ProAnimatedEngagementPage({ onImageLoad }: ProAnimatedEn
   const [imageLoaded, setImageLoaded] = useState(false)
   const { scrollYProgress } = useScroll()
   const { t } = useLanguage()
-  
+
   // Parallax effects
   const y1 = useTransform(scrollYProgress, [0, 1], [0, 100])
   const y2 = useTransform(scrollYProgress, [0, 1], [0, 50])
@@ -77,13 +77,13 @@ export default function ProAnimatedEngagementPage({ onImageLoad }: ProAnimatedEn
   return (
     <div className="min-h-screen bg-transparent overflow-x-hidden">
       {/* Hero Section - full viewport, edge to edge */}
-      <motion.section 
+      <motion.section
         className="relative flex items-center justify-center px-0 py-0 h-screen"
         initial={false}
         animate="visible"
         variants={fadeIn}
       >
-        <motion.div 
+        <motion.div
           className="w-full h-full relative z-10"
           variants={scaleIn}
         >
@@ -102,20 +102,20 @@ export default function ProAnimatedEngagementPage({ onImageLoad }: ProAnimatedEn
             />
           </div>
         </motion.div>
-        
+
         {/* Subtle parallax background elements */}
-        <motion.div 
+        <motion.div
           className="absolute -left-20 top-1/4 w-64 h-64 bg-accent/5 rounded-full mix-blend-multiply filter blur-3xl"
           style={{ y: y1 }}
         />
-        <motion.div 
+        <motion.div
           className="absolute -right-20 bottom-1/4 w-72 h-72 bg-accent/5 rounded-full mix-blend-multiply filter blur-3xl"
           style={{ y: y2 }}
         />
       </motion.section>
 
       {/* Section 1: Our Special Day */}
-      <motion.section 
+      <motion.section
         className="relative py-16 px-4 md:py-20"
         initial="hidden"
         whileInView="visible"
@@ -124,7 +124,7 @@ export default function ProAnimatedEngagementPage({ onImageLoad }: ProAnimatedEn
       >
         <div className="max-w-5xl mx-auto">
           <div className="bg-white/50 backdrop-blur-sm border border-white/30 rounded-3xl p-8 md:p-12 shadow-2xl">
-            <motion.div 
+            <motion.div
               className="text-center mb-8"
               variants={slideUp}
             >
@@ -145,7 +145,7 @@ export default function ProAnimatedEngagementPage({ onImageLoad }: ProAnimatedEn
       </motion.section>
 
       {/* Section 2: Join Us At */}
-      <motion.section 
+      <motion.section
         className="relative py-16 px-4 md:py-20"
         initial="hidden"
         whileInView="visible"
@@ -154,7 +154,7 @@ export default function ProAnimatedEngagementPage({ onImageLoad }: ProAnimatedEn
       >
         <div className="max-w-5xl mx-auto">
           <div className="bg-white/50 backdrop-blur-sm border border-white/30 rounded-3xl p-8 md:p-12 shadow-2xl">
-            <motion.div 
+            <motion.div
               className="text-center mb-12"
               variants={slideUp}
             >
@@ -164,7 +164,7 @@ export default function ProAnimatedEngagementPage({ onImageLoad }: ProAnimatedEn
               </h2>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               className="max-w-2xl mx-auto space-y-8"
               variants={scaleIn}
             >
@@ -203,7 +203,7 @@ export default function ProAnimatedEngagementPage({ onImageLoad }: ProAnimatedEn
                 </div>
 
                 <div className="mt-4">
-                  <p className="text-gray-700 text-sm md:text-base text-center" dir="rtl" lang="ar">
+                  <p className="text-gray-700 text-sm md:text-base text-center whitespace-pre-line" dir="rtl" lang="ar">
                     {t('eventNote')}
                   </p>
                 </div>
@@ -217,7 +217,7 @@ export default function ProAnimatedEngagementPage({ onImageLoad }: ProAnimatedEn
         </div>
       </motion.section>
 
-      <motion.section 
+      <motion.section
         className="relative py-20 px-4 md:py-32 overflow-visible"
         initial="hidden"
         whileInView="visible"
@@ -226,16 +226,16 @@ export default function ProAnimatedEngagementPage({ onImageLoad }: ProAnimatedEn
       >
         <div className="max-w-7xl mx-auto relative">
           <div className="relative h-96 flex items-center justify-center">
-            <motion.div 
+            <motion.div
               className="absolute top-0 left-0 w-64 h-64 rounded-full overflow-hidden border-8 border-white/70 shadow-3xl z-20"
-              animate={{ 
+              animate={{
                 y: [0, -20, 0],
                 rotate: [0, 10, 0]
               }}
-              transition={{ 
-                duration: 4, 
-                repeat: Infinity, 
-                ease: "easeInOut" 
+              transition={{
+                duration: 4,
+                repeat: Infinity,
+                ease: "easeInOut"
               }}
             >
               <Image
@@ -244,26 +244,26 @@ export default function ProAnimatedEngagementPage({ onImageLoad }: ProAnimatedEn
                 width={256}
                 height={256}
                 className="w-full h-full object-cover"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.style.display = 'none';
-                    const parent = target.parentElement;
-                    if (parent) {
-                      parent.innerHTML = '<div class="w-full h-full bg-gradient-to-br from-pink-200 to-orange-200 flex items-center justify-center"><span class="text-4xl font-serif text-gray-600">Photo 1</span></div>';
-                    }
-                  }}
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = 'none';
+                  const parent = target.parentElement;
+                  if (parent) {
+                    parent.innerHTML = '<div class="w-full h-full bg-gradient-to-br from-pink-200 to-orange-200 flex items-center justify-center"><span class="text-4xl font-serif text-gray-600">Photo 1</span></div>';
+                  }
+                }}
               />
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               className="absolute top-8 right-0 w-56 h-56 rounded-full overflow-hidden border-8 border-white/70 shadow-3xl z-20"
-              animate={{ 
+              animate={{
                 y: [0, 20, 0],
                 rotate: [0, -10, 0]
               }}
-              transition={{ 
-                duration: 3, 
-                repeat: Infinity, 
+              transition={{
+                duration: 3,
+                repeat: Infinity,
                 ease: "easeInOut",
                 delay: 1
               }}
@@ -274,26 +274,26 @@ export default function ProAnimatedEngagementPage({ onImageLoad }: ProAnimatedEn
                 width={224}
                 height={224}
                 className="w-full h-full object-cover"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.style.display = 'none';
-                    const parent = target.parentElement;
-                    if (parent) {
-                      parent.innerHTML = '<div class="w-full h-full bg-gradient-to-br from-yellow-200 to-pink-200 flex items-center justify-center"><span class="text-3xl font-serif text-gray-600">Photo 2</span></div>';
-                    }
-                  }}
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = 'none';
+                  const parent = target.parentElement;
+                  if (parent) {
+                    parent.innerHTML = '<div class="w-full h-full bg-gradient-to-br from-yellow-200 to-pink-200 flex items-center justify-center"><span class="text-3xl font-serif text-gray-600">Photo 2</span></div>';
+                  }
+                }}
               />
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-48 h-48 rounded-full overflow-hidden border-8 border-white/70 shadow-3xl z-20"
-              animate={{ 
+              animate={{
                 y: [0, -15, 0],
                 rotate: [0, 6, 0]
               }}
-              transition={{ 
-                duration: 5, 
-                repeat: Infinity, 
+              transition={{
+                duration: 5,
+                repeat: Infinity,
                 ease: "easeInOut",
                 delay: 2
               }}
@@ -304,14 +304,14 @@ export default function ProAnimatedEngagementPage({ onImageLoad }: ProAnimatedEn
                 width={192}
                 height={192}
                 className="w-full h-full object-cover"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.style.display = 'none';
-                    const parent = target.parentElement;
-                    if (parent) {
-                      parent.innerHTML = '<div class="w-full h-full bg-gradient-to-br from-blue-200 to-purple-200 flex items-center justify-center"><span class="text-2xl font-serif text-gray-600">Photo 3</span></div>';
-                    }
-                  }}
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = 'none';
+                  const parent = target.parentElement;
+                  if (parent) {
+                    parent.innerHTML = '<div class="w-full h-full bg-gradient-to-br from-blue-200 to-purple-200 flex items-center justify-center"><span class="text-2xl font-serif text-gray-600">Photo 3</span></div>';
+                  }
+                }}
               />
             </motion.div>
           </div>
@@ -359,7 +359,7 @@ export default function ProAnimatedEngagementPage({ onImageLoad }: ProAnimatedEn
       </motion.section> */}
 
       {/* Section 5: Leave Us a Message */}
-      <motion.section 
+      <motion.section
         className="relative py-16 px-4 md:py-20"
         initial="hidden"
         whileInView="visible"
@@ -368,7 +368,7 @@ export default function ProAnimatedEngagementPage({ onImageLoad }: ProAnimatedEn
       >
         <div className="max-w-5xl mx-auto">
           <div className="bg-white/50 backdrop-blur-sm border border-white/30 rounded-3xl p-8 md:p-12 shadow-2xl">
-            <motion.div 
+            <motion.div
               className="text-center mb-8"
               variants={slideUp}
             >
@@ -407,14 +407,14 @@ export default function ProAnimatedEngagementPage({ onImageLoad }: ProAnimatedEn
       >
         <PhotoSharingSection />
       </motion.section>
-      
+
       {/* Footer */}
-      <motion.footer 
+      <motion.footer
         className="relative py-16 text-center"
         variants={fadeIn}
       >
         <div className="max-w-2xl mx-auto px-4">
-          <motion.p 
+          <motion.p
             className="font-serif text-2xl md:text-3xl text-white mb-6"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -425,17 +425,17 @@ export default function ProAnimatedEngagementPage({ onImageLoad }: ProAnimatedEn
           </motion.p>
           <div className="flex items-center justify-center gap-3 mb-8">
             <div className="w-12 h-px bg-accent/30" />
-            <motion.span 
+            <motion.span
               className="text-accent"
               animate={{ scale: [1, 1.1, 1] }}
-              transition={{ 
-                duration: 2, 
-                repeat: Infinity, 
-                ease: "easeInOut" 
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut"
               }}
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M12 21s-6.716-4.405-9.193-8.14C1.02 10.607 2.09 7.5 5.08 6.62c1.86-.56 3.6.23 4.92 1.8 1.32-1.57 3.06-2.36 4.92-1.8 2.99.88 4.06 3.986 2.273 6.24C18.716 16.595 12 21 12 21z"/>
+                <path d="M12 21s-6.716-4.405-9.193-8.14C1.02 10.607 2.09 7.5 5.08 6.62c1.86-.56 3.6.23 4.92 1.8 1.32-1.57 3.06-2.36 4.92-1.8 2.99.88 4.06 3.986 2.273 6.24C18.716 16.595 12 21 12 21z" />
               </svg>
             </motion.span>
             <div className="w-12 h-px bg-accent/30" />
@@ -448,9 +448,9 @@ export default function ProAnimatedEngagementPage({ onImageLoad }: ProAnimatedEn
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-sm text-white/60 hover:text-white/80 transition-colors"
             >
-              <a 
-                href="https://www.instagram.com/digitiva.co/" 
-                target="_blank" 
+              <a
+                href="https://www.instagram.com/digitiva.co/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-1"
               >
@@ -462,7 +462,7 @@ export default function ProAnimatedEngagementPage({ onImageLoad }: ProAnimatedEn
                 </svg>
               </a>
             </motion.div>
-            <motion.p 
+            <motion.p
               className="text-xs text-white/40 text-center"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}

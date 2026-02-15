@@ -9,7 +9,7 @@ export const translations = {
     hours: "Hours",
     minutes: "Minutes",
     seconds: "Seconds",
-    
+
     // Venue section
     joinUsAt: "Join Us At",
     venueName: "Sheraton Jumeirah Beach Resort",
@@ -21,10 +21,10 @@ export const translations = {
     clickMapForDirections: "Click map for directions",
     viewOnGoogleMaps: "View on Google Maps",
     tapToOpenMap: "Tap to open map",
-    
+
     // Love message section
     loveMessageFromHusband: "A Love Message from a Husband to his Wife",
-    
+
     // Message section
     leaveUsAMessage: "Leave Us a Message",
     leaveMessageDescription: "Leave a sweet message or drawing that we can always look at and smile",
@@ -37,11 +37,11 @@ export const translations = {
     sendMessage: "Send Message",
     sending: "Sending...",
     shareYourPhotos: "Share Your Photos",
-    
+
     // Footer
     cantWaitToCelebrate: "We can't wait to celebrate with you",
     designedBy: "Designed with love by Digitiva",
-    
+
     // RSVP
     rsvp: "RSVP",
     pleaseLetUsKnow: "Please let us know if you'll be joining us",
@@ -54,7 +54,7 @@ export const translations = {
     submitting: "Submitting...",
     thankYou: "Thank you!",
     weCantWait: "We can't wait to celebrate with you!",
-    
+
     // Photo sharing
     shareYourMemories: "Share Your Memories",
     uploadPhotos: "Upload Photos",
@@ -64,7 +64,7 @@ export const translations = {
     openPhotoAlbum: "Open Photo Album",
     scanQRCode: "Scan QR Code",
     photoAlbumDescription: "Click the button above or scan the QR code to access our shared Google Drive folder where you can upload all your photos from the celebration!",
-    
+
     // Handwritten message additional
     color: "Color:",
     width: "Width:",
@@ -81,11 +81,11 @@ export const translations = {
     sendRSVP: "Send RSVP",
     letUsKnow: "Let us know if you'll be joining us!",
     failedToSendRSVP: "Failed to send RSVP. Please try again later.",
-    
+
     // Audio
     mute: "Mute",
     unmute: "Unmute",
-    
+
     // Loading
     loading: "Loading...",
     loadingInvitation: "Loading invitation...",
@@ -99,22 +99,22 @@ export const translations = {
     hours: "ساعات",
     minutes: "دقائق",
     seconds: "ثواني",
-    
+
     // Venue section
     joinUsAt: "انضم إلينا في",
     venueName: "فندق شيراتون جميرا بيتش ريزورت",
     venueLocation: "دبي، الإمارات العربية المتحدة",
     date: "22 مارس 2026",
     time: "4:30 مساءً",
-    eventNote: "ملاحظة: زفة العرسان في تمام الساعة 4:45 عصراً، نرجو الحضور مبكراً لتفادي الازدحام المتوقع من حركة المرور",
+    eventNote: "ملاحظة: زفة العرسان في تمام الساعة 4:45 عصراً، نرجو الحضور مبكراً لتفادي الازدحام المتوقع من حركة المرور\nالرجاء عدم اصطحاب الاطفال",
     location: "دبي، الإمارات العربية المتحدة",
     clickMapForDirections: "اضغط على الخريطة للحصول على الاتجاهات",
     viewOnGoogleMaps: "عرض على خرائط جوجل",
     tapToOpenMap: "اضغط لفتح الخريطة",
-    
+
     // Love message section
     loveMessageFromHusband: "رسالة حب من زوج إلى زوجته",
-    
+
     // Message section
     leaveUsAMessage: "اترك لنا رسالة",
     leaveMessageDescription: "اترك رسالة حلوة أو رسمة يمكننا أن ننظر إليها دائماً ونتذكر",
@@ -127,11 +127,11 @@ export const translations = {
     sendMessage: "إرسال الرسالة",
     sending: "جاري الإرسال...",
     shareYourPhotos: "شارك صورك",
-    
+
     // Footer
     cantWaitToCelebrate: "لا يمكننا الانتظار للاحتفال معكم",
     designedBy: "صمم بحب من قبل ديجيتيفا",
-    
+
     // RSVP
     rsvp: "تأكيد الحضور",
     pleaseLetUsKnow: "يرجى إعلامنا إذا كنت ستنضم إلينا",
@@ -144,7 +144,7 @@ export const translations = {
     submitting: "جاري الإرسال...",
     thankYou: "شكراً لك!",
     weCantWait: "لا يمكننا الانتظار للاحتفال معكم!",
-    
+
     // Photo sharing
     shareYourMemories: "شارك ذكرياتك",
     uploadPhotos: "رفع الصور",
@@ -154,7 +154,7 @@ export const translations = {
     openPhotoAlbum: "فتح ألبوم الصور",
     scanQRCode: "امسح رمز QR",
     photoAlbumDescription: "اضغط على الزر أعلاه أو امسح رمز QR للوصول إلى مجلد Google Drive المشترك حيث يمكنك رفع جميع صورك من الاحتفال!",
-    
+
     // Handwritten message additional
     color: "اللون:",
     width: "العرض:",
@@ -171,11 +171,11 @@ export const translations = {
     sendRSVP: "إرسال تأكيد الحضور",
     letUsKnow: "أخبرنا إذا كنت ستنضم إلينا!",
     failedToSendRSVP: "فشل إرسال تأكيد الحضور. يرجى المحاولة مرة أخرى لاحقاً.",
-    
+
     // Audio
     mute: "كتم الصوت",
     unmute: "إلغاء كتم الصوت",
-    
+
     // Loading
     loading: "جاري التحميل...",
     loadingInvitation: "جاري تحميل الدعوة...",
